@@ -32,7 +32,7 @@ A simple example of using Boom! for converting data and calcualate a basic stati
 ./run  stat
 
 #Documentation
-The documentation of BOOM! including its API, an abstract and a presentation in LibreOffice Impress format(https://www.libreoffice.org/) can be found in: 
+The documentation of BOOM! including its API, an abstract and a presentation in LibreOffice Impress format (https://www.libreoffice.org/) can be found in: 
 https://github.com/rmorales-iaa/Boom/tree/master/sources/deploy/doc
 
 #CatSpatk
