@@ -1,1 +1,48 @@
-../../compileAndAssembly
+#!/bin/bash
+
+#------------------------------------------------------------------------------
+#Variable definition
+#------------------------------------------------------------------------------
+
+#------------------------------------------------------------------------------
+#script
+#------------------------------------------------------------------------------
+
+OUTPUT_PATH="target/scala-2.11/"
+USER_PATH="deploy/"
+
+USER_PATH_DOC=${USER_PATH}doc/
+USER_PATH_API=${USER_PATH_DOC}api/
+
+
+#------------------------------------------------------------------------------
+
+echo $(date +"%Y-%m-%d:%Hh:%Mm:%Ss") 'Compiling scala sources'
+
+#removing old api
+echo "Removing old api"
+rm -fr $USER_PATH_API
+
+#"Compiling, aseembling and documenting scala project"
+echo "Compiling, aseembling and documenting scala project"
+sbt compile assembly eclipse dependency-tree dependency-dot doc
+
+#Generating a png file with http://www.graphviz.org/
+GRAPH_FILE=target/dependencies-compile.png
+dot -Tpng target/dependencies-compile.dot > $GRAPH_FILE
+echo "Created graph file: " $GRAPH_FILE
+
+#move doc
+echo "Moving doc to: "$USER_PATH
+mv ${OUTPUT_PATH}api $USER_PATH_DOC
+
+#move jar
+echo "Moving created jar file to: "$USER_PATH
+mv  $OUTPUT_PATH*.jar $USER_PATH
+ls -la $USER_PATH
+
+echo $(date +"%Y-%m-%d:%Hh:%Mm:%Ss") 'End of compilation scala sources'
+
+#end of script
+#------------------------------------------------------------------------------
+#------------------------------------------------------------------------------

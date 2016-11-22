@@ -1,0 +1,26 @@
+#========================================================
+#========================================================
+
+ssh -X rmorales@ui.iaa.es
+qsub  -I -l nodes=1:ppn=1,host=wn15.iaa.es
+bash
+stop-slave.sh
+start-slave.sh --cores 2 --memory 2g --properties-file /home/users/udit/rmorales/spark/spark_latest/conf/spark-defaults.conf spark://193.146.145.100:7077 
+
+#========================================================
+ssh -X rmorales@ui.iaa.es
+qsub  -I -l nodes=1:ppn=1,host=wn16.iaa.es
+bash
+stop-slave.sh
+start-slave.sh --cores 2 --memory 2g --properties-file /home/users/udit/rmorales/spark/spark_latest/conf/spark-defaults.conf spark://193.146.145.100:7077 
+
+#========================================================
+
+ssh -X rmorales@ui.iaa.es
+qsub  -I -l nodes=1:ppn=1,host=wn17.iaa.es
+bash
+stop-slave.sh
+start-slave.sh --cores 2 --memory 2g --properties-file /home/users/udit/rmorales/spark/spark_latest/conf/spark-defaults.conf spark://193.146.145.100:7077 
+
+#========================================================
+#========================================================

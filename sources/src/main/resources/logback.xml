@@ -1,0 +1,28 @@
+<!-- Set this configuration file as Java virtual machine parameter -->
+<!-- -Dlogback.configurationFile=src/main/resources/logback.xml -->
+<!-- https://github.com/typesafehub/scala-logging -->
+<!-- http://logback.qos.ch/manual/configuration.html#logback.statusLC -->
+
+<configuration>
+
+    <timestamp key="bySecond" datePattern="yyyy'y_'MM'm_'dd'd_'HH'h_'mm'm_'ss's_'SSS'ms'" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+       <encoder>
+           <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %msg%n</pattern>
+       </encoder>
+   </appender>
+
+   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+       <file>output/logger/${bySecond}.log</file>
+       <append>false</append>
+       <encoder>
+           <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %msg%n</pattern>
+       </encoder>
+   </appender>
+
+   <root level="ERROR">
+       <appender-ref ref="STDOUT" />
+       <appender-ref ref="FILE" />
+   </root>
+</configuration>

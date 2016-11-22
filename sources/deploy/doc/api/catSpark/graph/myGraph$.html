@@ -1,0 +1,677 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>myGraph - catSpark.graph.myGraph</title>
+          <meta name="description" content="myGraph - catSpark.graph.myGraph" />
+          <meta name="keywords" content="myGraph catSpark.graph.myGraph" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'catSpark.graph.myGraph$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Object" src="../../lib/object_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="catSpark">catSpark</a>.<a href="package.html" class="extype" name="catSpark.graph">graph</a></p>
+        <h1>myGraph</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="catSpark.graph">package graph</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myGraph</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Implements useful graphs algorithms. The implementation of those algorithms
+ are based on the book: &quot;Spark graphx in action&quot; by Michael S. Malak and Robin East
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="catSpark.graph.myGraph"><span>myGraph</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="catSpark.graph.myGraph.vertex_ND" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="vertex_NDextendsSerializablewithProduct"></a>
+      <a id="vertex_ND:vertex_ND"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="myGraph$$vertex_ND.html"><span class="name">vertex_ND</span></a><span class="params">(<span name="label">label: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="valueList">valueList: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span> with <span class="extype" name="scala.Product">Product</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@vertex_NDextendsSerializablewithProduct" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Type of vertex in N-dimensions used in k-nearest neighbors algorithm.</p><div class="fullcomment"><div class="comment cmt"><p>Type of vertex in N-dimensions used in k-nearest neighbors algorithm.
+ Based on book &quot;Spark graphx in action&quot;, section 7.4.1</p></div><dl class="paramcmts block"><dt class="param">label</dt><dd class="cmt"><p>Name of the vertex</p></dd><dt class="param">valueList</dt><dd class="cmt"><p>List of N-dimensions values of the vertex</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#build" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="build(sc:org.apache.spark.SparkContext,v:Array[String],e:Array[(Int,Int,Double)]):org.apache.spark.graphx.Graph[String,Double]"></a>
+      <a id="build(SparkContext,Array[String],Array[(Int,Int,Double)]):Graph[String,Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">build</span><span class="params">(<span name="sc">sc: <span class="extype" name="org.apache.spark.SparkContext">SparkContext</span></span>, <span name="v">v: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="e">e: <span class="extype" name="scala.Array">Array</span>[(<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Double">Double</span>)]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@build(sc:org.apache.spark.SparkContext,v:Array[String],e:Array[(Int,Int,Double)]):org.apache.spark.graphx.Graph[String,Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Factory for Graph instances.</p><div class="fullcomment"><div class="comment cmt"><p>Factory for Graph instances.
+ Creates a graph using a name list of vertexes and a edge list</p></div><dl class="paramcmts block"><dt class="param">sc</dt><dd class="cmt"><p>Spark contex</p></dd><dt class="param">v</dt><dd class="cmt"><p>List of names of vertexes</p></dd><dt class="param">e</dt><dd class="cmt"><p>List of edges</p></dd><dt>returns</dt><dd class="cmt"><p>A new Graph</p></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#clusteringCoefficient" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clusteringCoefficient[VD,ED](g:org.apache.spark.graphx.Graph[VD,ED])(implicitevidence$4:scala.reflect.ClassTag[VD],implicitevidence$5:scala.reflect.ClassTag[ED]):Double"></a>
+      <a id="clusteringCoefficient[VD,ED](Graph[VD,ED])(ClassTag[VD],ClassTag[ED]):Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clusteringCoefficient</span><span class="tparams">[<span name="VD">VD</span>, <span name="ED">ED</span>]</span><span class="params">(<span name="g">g: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.clusteringCoefficient.VD">VD</span>, <span class="extype" name="catSpark.graph.myGraph.clusteringCoefficient.ED">ED</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="catSpark.graph.myGraph.clusteringCoefficient.VD">VD</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="catSpark.graph.myGraph.clusteringCoefficient.ED">ED</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@clusteringCoefficient[VD,ED](g:org.apache.spark.graphx.Graph[VD,ED])(implicitevidence$4:scala.reflect.ClassTag[VD],implicitevidence$5:scala.reflect.ClassTag[ED]):Double" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Obtains a measure of the connectedness of the graph
+Based on book &quot;Spark graphx in action&quot;, section 8.4</p><div class="fullcomment"><div class="comment cmt"><p>Obtains a measure of the connectedness of the graph
+Based on book &quot;Spark graphx in action&quot;, section 8.4</p></div><dl class="paramcmts block"><dt class="param">g</dt><dd class="cmt"><p>Graph with a vertexes list with type 'VD' and a edges list with type 'ED'</p></dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#dijkstra" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="dijkstra[VD](g:org.apache.spark.graphx.Graph[VD,Double],origin:org.apache.spark.graphx.VertexId):org.apache.spark.graphx.Graph[(VD,List[Any]),Double]"></a>
+      <a id="dijkstra[VD](Graph[VD,Double],VertexId):Graph[(VD,List[Any]),Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dijkstra</span><span class="tparams">[<span name="VD">VD</span>]</span><span class="params">(<span name="g">g: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.dijkstra.VD">VD</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="origin">origin: <span class="extype" name="org.apache.spark.graphx.VertexId">VertexId</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[(<span class="extype" name="catSpark.graph.myGraph.dijkstra.VD">VD</span>, <span class="extype" name="scala.collection.immutable.List">List</span>[<span class="extype" name="scala.Any">Any</span>]), <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@dijkstra[VD](g:org.apache.spark.graphx.Graph[VD,Double],origin:org.apache.spark.graphx.VertexId):org.apache.spark.graphx.Graph[(VD,List[Any]),Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implements the Dijkstra algorithm: shorter paths distance including weights from a vertex
+including paths followed.</p><div class="fullcomment"><div class="comment cmt"><p>Implements the Dijkstra algorithm: shorter paths distance including weights from a vertex
+including paths followed.
+Based on book &quot;Spark graphx in action&quot;, section 6.1</p></div><dl class="paramcmts block"><dt class="param">g</dt><dd class="cmt"><p>Graph with a vertexes list with type 'VD' and a edges list with type 'Double'</p></dd><dt class="param">origin</dt><dd class="cmt"><p>Origin vertex used in the algorithm</p></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#greedy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="greedy[VD](g:org.apache.spark.graphx.Graph[VD,Double],origin:org.apache.spark.graphx.VertexId):org.apache.spark.graphx.Graph[Boolean,(Double,Boolean)]"></a>
+      <a id="greedy[VD](Graph[VD,Double],VertexId):Graph[Boolean,(Double,Boolean)]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">greedy</span><span class="tparams">[<span name="VD">VD</span>]</span><span class="params">(<span name="g">g: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.greedy.VD">VD</span>, <span class="extype" name="scala.Double">Double</span>]</span>, <span name="origin">origin: <span class="extype" name="org.apache.spark.graphx.VertexId">VertexId</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="scala.Boolean">Boolean</span>, (<span class="extype" name="scala.Double">Double</span>, <span class="extype" name="scala.Boolean">Boolean</span>)]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@greedy[VD](g:org.apache.spark.graphx.Graph[VD,Double],origin:org.apache.spark.graphx.VertexId):org.apache.spark.graphx.Graph[Boolean,(Double,Boolean)]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implements the travelling salesman algorithm: greddy algorithm that calculates
+ the shortest path through an undirectional graph that hits every vertex.</p><div class="fullcomment"><div class="comment cmt"><p>Implements the travelling salesman algorithm: greddy algorithm that calculates
+ the shortest path through an undirectional graph that hits every vertex.
+Based on book &quot;Spark graphx in action&quot;, section 6.2</p></div><dl class="paramcmts block"><dt class="param">g</dt><dd class="cmt"><p>Graph with a vertexes list with type 'VD' and a edges list with type 'Double'</p></dd><dt class="param">origin</dt><dd class="cmt"><p>Origin vertex used in the algorithm</p></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#kNearestNeighbor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="kNearestNeighbor(sc:org.apache.spark.SparkContext,a:Seq[catSpark.graph.myGraph.vertex_ND],k:Int):org.apache.spark.graphx.Graph[catSpark.graph.myGraph.vertex_ND,Double]"></a>
+      <a id="kNearestNeighbor(SparkContext,Seq[vertex_ND],Int):Graph[vertex_ND,Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kNearestNeighbor</span><span class="params">(<span name="sc">sc: <span class="extype" name="org.apache.spark.SparkContext">SparkContext</span></span>, <span name="a">a: <span class="extype" name="scala.Seq">Seq</span>[<a href="myGraph$$vertex_ND.html" class="extype" name="catSpark.graph.myGraph.vertex_ND">vertex_ND</a>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<a href="myGraph$$vertex_ND.html" class="extype" name="catSpark.graph.myGraph.vertex_ND">vertex_ND</a>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@kNearestNeighbor(sc:org.apache.spark.SparkContext,a:Seq[catSpark.graph.myGraph.vertex_ND],k:Int):org.apache.spark.graphx.Graph[catSpark.graph.myGraph.vertex_ND,Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implements k-nearest neighbors algorithm with a complexity of: n2 log n
+Based on book &quot;Spark graphx in action&quot;, section 7.4.1</p><div class="fullcomment"><div class="comment cmt"><p>Implements k-nearest neighbors algorithm with a complexity of: n2 log n
+Based on book &quot;Spark graphx in action&quot;, section 7.4.1</p></div><dl class="paramcmts block"><dt class="param">sc</dt><dd class="cmt"><p>Spark context</p></dd><dt class="param">a</dt><dd class="cmt"><p>List of vertexes</p></dd><dt class="param">k</dt><dd class="cmt"><p>Number of neighbors</p></dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#kNearestNeighborApprox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="kNearestNeighborApprox(sc:org.apache.spark.SparkContext,a:Seq[catSpark.graph.myGraph.vertex_ND],k:Int):org.apache.spark.graphx.Graph[catSpark.graph.myGraph.vertex_ND,Double]"></a>
+      <a id="kNearestNeighborApprox(SparkContext,Seq[vertex_ND],Int):Graph[vertex_ND,Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">kNearestNeighborApprox</span><span class="params">(<span name="sc">sc: <span class="extype" name="org.apache.spark.SparkContext">SparkContext</span></span>, <span name="a">a: <span class="extype" name="scala.Seq">Seq</span>[<a href="myGraph$$vertex_ND.html" class="extype" name="catSpark.graph.myGraph.vertex_ND">vertex_ND</a>]</span>, <span name="k">k: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<a href="myGraph$$vertex_ND.html" class="extype" name="catSpark.graph.myGraph.vertex_ND">vertex_ND</a>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@kNearestNeighborApprox(sc:org.apache.spark.SparkContext,a:Seq[catSpark.graph.myGraph.vertex_ND],k:Int):org.apache.spark.graphx.Graph[catSpark.graph.myGraph.vertex_ND,Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implements k-nearest neighbors parallel version (Wang algorithm)
+Based on book &quot;Spark graphx in action&quot;, section 7.4.1</p><div class="fullcomment"><div class="comment cmt"><p>Implements k-nearest neighbors parallel version (Wang algorithm)
+Based on book &quot;Spark graphx in action&quot;, section 7.4.1</p></div><dl class="paramcmts block"><dt class="param">sc</dt><dd class="cmt"><p>Spark context</p></dd><dt class="param">a</dt><dd class="cmt"><p>List of vertexes</p></dd><dt class="param">k</dt><dd class="cmt"><p>Number of neighbors</p></dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#mergeGraphs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mergeGraphs(g1:org.apache.spark.graphx.Graph[String,String],g2:org.apache.spark.graphx.Graph[String,String]):org.apache.spark.graphx.Graph[String,String]"></a>
+      <a id="mergeGraphs(Graph[String,String],Graph[String,String]):Graph[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mergeGraphs</span><span class="params">(<span name="g1">g1: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="g2">g2: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@mergeGraphs(g1:org.apache.spark.graphx.Graph[String,String],g2:org.apache.spark.graphx.Graph[String,String]):org.apache.spark.graphx.Graph[String,String]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Merges the vertices of two graphs
+Based on book &quot;Spark graphx in action&quot;, section 8.1.2</p><div class="fullcomment"><div class="comment cmt"><p>Merges the vertices of two graphs
+Based on book &quot;Spark graphx in action&quot;, section 8.1.2</p></div><dl class="paramcmts block"><dt class="param">g1</dt><dd class="cmt"><p>Graph vertexes list with type 'String' and a edges list with type 'String'</p></dd><dt class="param">g2</dt><dd class="cmt"><p>Graph vertexes list with type 'String' and a edges list with type 'String'</p></dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#minSpanningTree" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="minSpanningTree[VD](g:org.apache.spark.graphx.Graph[VD,Double])(implicitevidence$1:scala.reflect.ClassTag[VD]):org.apache.spark.graphx.Graph[VD,Double]"></a>
+      <a id="minSpanningTree[VD](Graph[VD,Double])(ClassTag[VD]):Graph[VD,Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">minSpanningTree</span><span class="tparams">[<span name="VD">VD</span>]</span><span class="params">(<span name="g">g: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.minSpanningTree.VD">VD</span>, <span class="extype" name="scala.Double">Double</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="catSpark.graph.myGraph.minSpanningTree.VD">VD</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.minSpanningTree.VD">VD</span>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@minSpanningTree[VD](g:org.apache.spark.graphx.Graph[VD,Double])(implicitevidence$1:scala.reflect.ClassTag[VD]):org.apache.spark.graphx.Graph[VD,Double]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Implements the minimum spanning tree: ensure all nodes are visited at minimum cost.</p><div class="fullcomment"><div class="comment cmt"><p>Implements the minimum spanning tree: ensure all nodes are visited at minimum cost.
+It is equivalent to &quot;travelling salesman&quot; algorithm but with backtrack.
+Based on book &quot;Spark graphx in action&quot;, section 6.3</p></div><dl class="paramcmts block"><dt class="param">g</dt><dd class="cmt"><p>Graph with a vertexes list with type 'VD' and a edges list with type 'Double'</p></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="catSpark.graph.myGraph#removeSingletons" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="removeSingletons[VD,ED](g:org.apache.spark.graphx.Graph[VD,ED])(implicitevidence$2:scala.reflect.ClassTag[VD],implicitevidence$3:scala.reflect.ClassTag[ED]):org.apache.spark.graphx.Graph[VD,ED]"></a>
+      <a id="removeSingletons[VD,ED](Graph[VD,ED])(ClassTag[VD],ClassTag[ED]):Graph[VD,ED]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">removeSingletons</span><span class="tparams">[<span name="VD">VD</span>, <span name="ED">ED</span>]</span><span class="params">(<span name="g">g: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.removeSingletons.VD">VD</span>, <span class="extype" name="catSpark.graph.myGraph.removeSingletons.ED">ED</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="catSpark.graph.myGraph.removeSingletons.VD">VD</span>]</span>, <span name="arg1">arg1: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="catSpark.graph.myGraph.removeSingletons.ED">ED</span>]</span>)</span><span class="result">: <span class="extype" name="org.apache.spark.graphx.Graph">Graph</span>[<span class="extype" name="catSpark.graph.myGraph.removeSingletons.VD">VD</span>, <span class="extype" name="catSpark.graph.myGraph.removeSingletons.ED">ED</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@removeSingletons[VD,ED](g:org.apache.spark.graphx.Graph[VD,ED])(implicitevidence$2:scala.reflect.ClassTag[VD],implicitevidence$3:scala.reflect.ClassTag[ED]):org.apache.spark.graphx.Graph[VD,ED]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Remove isolated vertexes without edges
+Based on book &quot;Spark graphx in action&quot;, section  8.1.1</p><div class="fullcomment"><div class="comment cmt"><p>Remove isolated vertexes without edges
+Based on book &quot;Spark graphx in action&quot;, section  8.1.1</p></div><dl class="paramcmts block"><dt class="param">g</dt><dd class="cmt"><p>Graph with a vertexes list with type 'VD' and a edges list with type 'ED'</p></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#catSpark.graph.myGraph$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

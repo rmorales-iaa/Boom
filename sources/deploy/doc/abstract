@@ -1,0 +1,26 @@
+Title: 
+Big Data at the IAA: main ideas and how to run a real application
+at the IAA computation cluster
+
+Authors:
+Rafael Morales (rmorales@iaa.es)
+Matilde Fernández (matilde@iaa.es)
+
+Abstract:
+The main goal of this talk is to promote Big Data at the IAA.
+
+A brief description of the Big Data problem is presented and how to solve it,
+minimizing the technical details, reviewing previous work at IAA
+and showing a practical case demonstration.
+
+We have chosen Spark as the software tool that implements a solution to Big Data 
+problem. Based on this tool, Cat-Spark application has been developed. It is an open
+source project that can be used as template for our interaction with Big
+Data to meet specific requirements. Cat-Spark contains a subset of Spark 
+capabilities that includes common calculations and analysis: basic statical 
+descriptive measures, data clustering no supervised, data spatial distribution and plot visualization.
+
+We will give a basic guide for running Spark applications at IAA's computation cluster.
+
+We will finish with a practical case: BOOM!, a project that uses Cat-Spark to 
+analyse data of M-type stars, showing some "live" work  using the IAA cluster.
