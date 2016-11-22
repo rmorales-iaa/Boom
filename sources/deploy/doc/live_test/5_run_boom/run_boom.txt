@@ -1,1 +1,0 @@
-./run parquet -i input/data/100.txt -o input/parquet/100 -suffix "_import_data"

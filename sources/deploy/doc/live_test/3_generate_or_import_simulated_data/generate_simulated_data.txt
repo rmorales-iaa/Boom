@@ -1,1 +1,0 @@
- python src/data_generation.py 100 ../Boom/input/data/star_100.txt

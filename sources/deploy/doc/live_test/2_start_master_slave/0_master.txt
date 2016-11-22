@@ -1,4 +1,0 @@
-ssh -X rmorales@ui.iaa.es  
-bash
-stop-master.sh  
-start-master.sh  

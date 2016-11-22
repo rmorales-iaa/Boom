@@ -1,3 +1,0 @@
-vi input/configuration/Boom.conf
-
-./run parquet -i input/data/100.txt -o input/parquet/100
