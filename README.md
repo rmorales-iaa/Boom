@@ -1,4 +1,4 @@
-# Boom
+# Boom!
 BOOM! (Big data On Our M starts) is a application to process data from M-starts using CatSpark tool (based on Spark 1.6.2).
 
 #Requirements
@@ -30,6 +30,10 @@ A simple example of using Boom! for converting data and calcualate a basic stati
 
 ./run. parquet -i input/data/1000.txt -o input/parquet/1000
 ./run  stat
+
+#Documentation
+The documentation of BOOM! including its API, an abstract and a presentation in LibreOffice Impress format (https://www.libreoffice.org/) can be found in: 
+https://github.com/rmorales-iaa/Boom/tree/master/sources/deploy/doc
 
 #CatSpatk
 CatSpark (Common data analysis tool with Spark verion 1.6.2) is 
