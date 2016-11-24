@@ -1,0 +1,9 @@
+  0_check_cluster_status
+ 1_get_resources_in_the cluster
+ 2_start_master_slave
+ 3_generate_or_import_simulated_data
+ 4_adapt_the_configuration_file
+ 5_run_boom
+ 6_check_master_status
+ 7_get_result
+ 8_stop_master_slave

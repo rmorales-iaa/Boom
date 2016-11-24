@@ -1,0 +1,32 @@
+less input/data/1000.txt
+
+./run parquet -i input/data/1000.txt -o input/parquet/1000 -suffix "_import_data"
+
+
+./run stat  -suffix "_stat"     
+
+move data to the laptop 
+
+less basicStat.tsv
+
+gephi --jdkhome $JAVA_HOME pearson_correlationGraph.gexf 
+
+./run  kmeans -k 3 -max 20 -run 5 -ep 1e-4 -colList "Mass","spectral_index_03" -suffix "_kmeans" 
+
+move data to the laptop 
+
+omoi@omoi:~/Downloads> less kMeans.tsv
+
+./run kNearestNeighbor -k 5 -scale 10 -colA "Mass" -colB "spectral_index_03" -suffix "_neighbor"
+
+move data to the laptop 
+
+gephi --jdkhome $JAVA_HOME kNearestNeighborGraph.gexf 
+
+./run plot -x "Mass" -y_1 "spectral_index_03" -y_2 "spectral_index_04" -suffix "_plot"
+
+move data to the laptop
+
+gnuplot plot.gnuplot
+
+ 
